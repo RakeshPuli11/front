@@ -1,0 +1,291 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html,body{
+    margin:0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.navbar{
+    background-color: #003E59; 
+}
+.logo{
+width: 87px;
+height: 40px;
+margin-top: 10px;
+}
+
+.nav-item{
+    font-family: Lora;
+    font-size: 14px;
+    font-weight: 400;
+    /* text-align: left; */
+    
+}
+.nav-link{
+    color: #ffffff;
+}
+.nav-link.t-1{
+    color: #E3BD86;
+}
+.t-1{
+    font-family: Lora;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;  
+}
+/* carousel */
+
+
+
+/* roundimages */
+
+#categories .container{
+    margin-top: 80px;
+}
+.image-container img{
+    width: 180px;
+    height: 180px;
+    border-radius: 100px;
+}
+.text-center p{
+    margin-top: 20px;
+    text-align: center;
+}
+/* promises */
+
+
+.promises {
+    overflow-x: auto;
+  }
+   .pic1{
+    height: 36px;
+    width: 36px;
+  }
+  .pp1{
+    font-family: Lora;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+}
+  .prom1 {
+    flex: 0 0 auto;
+    width: 125px;
+    text-align: center;
+    
+  }
+  @media (min-width: 1024px) { 
+    .prom1 {
+      width: 190px;
+    }
+  } 
+
+/* images and para */
+
+.rectimg img{
+   width:282px;
+   height:500px;
+   margin-top:80px;
+}
+.sideimg{
+    margin-top:80px;
+}
+.sideimg1{
+   width:282px;
+   height: 238px;
+   border-radius:400px 400px 0px 0px;
+}
+.sideimg2{
+    width:282px;
+    height:238px;
+    border-radius: 0px 115px 119px 119px;
+    margin-top:30px;
+}
+.para{
+  margin-top:120px;
+  
+}
+.phead{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500px;
+    color: #E3BD86;
+}
+.phead2{
+    font-family: Lora;
+    font-size: 36px;
+    font-weight: 700px;
+    color: #111111;
+}
+.info{
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    color:#555555;
+    margin-top: 10px;
+}
+.info2{
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    color: #555555;
+    margin-top: 30px;
+}
+
+/* contact */
+.contact{
+    font-family: Lora;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.con2{
+    font-family: Poppins;
+    font-weight: 400;
+    text-align: center;
+    color:#555555;
+
+}
+.calimg img{
+    width: 40px;
+    height: 40px;  
+}
+.ph{
+    font-family: Poppins;
+    font-weight: 500;
+}
+.para1{
+    font-family: Lora;
+    font-style: italic;
+    font-weight: 400;
+    color: #555555;
+
+}
+.para2{
+    font-family: Lora;
+    font-style: italic;
+    font-weight: 400;
+    color: #555555;
+}
+
+.mailimg img{
+    width: 40px;
+    height: 40px;  
+}
+.mailpara{
+    font-family: Lora;
+    font-style: italic;
+    font-weight: 400;
+    text-align: center;
+    color: #555555;
+
+}
+
+.whatsappimg img{
+    width: 40px;
+    height: 40px;   
+}
+.wp{
+    font-family: Lora;
+    font-style: italic;
+    font-weight: 400;
+    text-align: center;
+    color: #555555;
+
+}
+.locimg img{
+    width: 40px;
+    height: 40px;
+}
+.loch{
+    font-family: Poppins;
+    font-weight: 500;
+    
+}
+.locp{
+    font-family: Lora;
+    font-style: italic;
+    font-weight: 400;   
+}
+/* footer */
+
+#footer{
+    background-color: #003E59;
+}
+
+.footerp{
+    color: #ffffff;
+    justify-content: center;
+    justify-content: space-evenly;
+    font-family: Lora;
+    font-style: italic;
+    font-weight: 400;
+    
+}
+.ficons{
+    color: #ffffff;
+    font-family: Lora;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    flex-wrap: wrap;
+}
+.ficons img{
+    /* width: 24px; */
+    height: 24px;
+    
+}
+.payp{
+    font-family: Lora;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    color: #ffffff;
+    
+}
+.weimg img{
+    width:40px;
+    height:11px; 
+    margin: 0 5px 0 5px;
+    
+}
+.copyright{
+    font-family: Lora;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+@media screen and (max-width:781px){
+    .X-YUG{
+        display: flex !important;
+        justify-content: flex-start !important;
+    }
+}
+
+@media screen and  (min-width:320px) and (max-width:400px){
+    .home-img1{
+        margin-top: 75px !important;
+    }
+    .carousal-img{
+        height: 200px;
+    }
+}
+@media screen and  (min-width:400px) and (max-width:550px){
+    .home-img1{
+        margin-top: 75px !important;
+    }
+    .carousal-img{
+        height: 300px;
+    }
+}
+@media screen and (min-width:550px) and (max-width:770px){
+    .home-img1{
+        margin-top: 75px !important;
+    }
+    .carousal-img{
+        height: 400px;
+    }
+}

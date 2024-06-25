@@ -1,0 +1,444 @@
+/* Navigation bar */
+.number{
+    background: #FFFFFF;
+}
+
+.shine{
+    width: 162px;
+    height: 31px;
+    font-family: Lora;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 30.72px;
+    text-align: left;
+    background: linear-gradient(90deg, #FF0F7B 0%, #F89B29 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-left: 5px;
+    margin-bottom: 0px;
+}
+.top_header{
+    font-family: Lora;
+font-size: 14px;
+font-style: italic;
+font-weight: 400;
+text-align: left;
+color: #31313B;
+margin-bottom: 0px;
+}
+.navbar{
+    margin-top: 48px;
+    background:#FFFFFF;
+    padding-top: 15px;
+}
+.nav-item {
+    text-align: right;
+    padding-left: 40px;
+}
+.active{
+    font-family: Lora;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.92px;
+    text-align: left;
+    background: linear-gradient(90deg, #FF0F7B 0%, #F89B29 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    
+}
+.nav-link{
+    font-family: Lora;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.92px;
+    text-align: left;
+    color: #31313B;
+
+    
+}
+
+.custom-toggler {
+    border-color: #FF0F7B; 
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23FF0F7B' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.items1{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Caorousel */
+.banner{
+    margin-top: 8%;
+}
+/* About section */
+.about-heading {
+    margin-top: 5%;
+}
+
+.about-content {
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.about {
+    font-family: 'Lora', serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 53.76px;
+    background: linear-gradient(90deg, #FF0F7B 0%, #F89B29 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.all {
+    font-family: Lora;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    color: #8D8D8D;
+}
+
+.build {
+    font-family: Lora;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40.96px;
+    text-align: left;
+    background: linear-gradient(90deg, #FF0F7B 0%, #F89B29 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.philo {
+    font-family: Lora;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.48px;
+    text-align: left;
+    color: #31313B;
+    padding-top: 15px;
+}
+
+.gold {
+    font-family: Lora;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: #8D8D8D;
+}
+
+
+/* Promises */
+
+.scrollable-container {
+    display: flex;
+    overflow-x: hidden;
+    white-space: nowrap;
+    padding: 10px;
+    gap: 20px; 
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.assured {
+    display: inline-block;
+    white-space: normal;
+    text-align: center; 
+    flex-shrink: 0; 
+}
+.assured_para {
+    font-family: Lora;
+    font-size: 14px;
+    font-style: italic;
+    color: #ffffff;
+}
+.assured img {
+    margin-bottom: 10px;
+}
+.assured_container{
+    margin-top: 100px;
+    background: linear-gradient(90deg, #FF0F7B 0%, #F89B29 100%);
+}
+
+/* Media query for screen width 768px or less */
+@media (max-width: 1024px) {
+    .scrollable-container {
+        overflow-x: auto; 
+    }
+}
+/* Media query for screen width 1440px or more */
+@media (min-width: 1440px) {
+    .scrollable-container {
+        justify-content: space-between; 
+    }
+
+    .assured {
+        flex: 1 1 auto; 
+        max-width: 20%; 
+    }
+}
+
+/* Products section */
+.products-header{
+    margin-top: 6%;
+}
+.products-content{
+    margin-bottom: 8%;
+    margin-top: 2%;
+}
+
+
+/* Contact us */
+#con{
+    font-family: Lora;
+font-size: 36px;
+font-weight: 700;
+line-height: 46.08px;
+text-align: center;
+color: #111111;
+}
+
+#para{
+   
+font-family: Poppins;
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+text-align: center;
+color: #555555;
+
+
+}
+
+#top{
+    margin-bottom: 3%;
+    margin-top: 5%;
+}
+
+
+.col-lg-3{
+    text-align: center;
+}
+
+.image{
+    width: 40px;
+    margin-bottom: 10%;
+}
+
+#num{
+
+font-family: Lora;
+font-size: 16px;
+font-weight: 500;
+line-height: 20.48px;
+color:#31313B;
+}
+
+#para1{
+   
+    font-family: Lora;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+color: #8D8D8D;
+
+}
+.contact-header{
+    margin-bottom: 4%;
+}
+#para2{
+  
+    font-family: Lora;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;   
+text-align: center;
+color: #8D8D8D;
+}
+
+/* Footer */
+footer {
+    margin-top: 100px;
+    background: linear-gradient(180deg, #F5F5F5 0%, #FFFFFF 0%, rgba(255, 15, 123, 0.4) 100%);
+}
+
+.footer_logo{
+    padding-top: 40px;
+}
+.footer_nav{
+    padding-top: 55px;
+    font-family: Lora;
+    font-size: 14px;
+    line-height: 17.92px;
+    text-align: left;
+
+    color: #31313B;
+}
+.follow_us_maindiv{
+    padding-top: 49px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer_followus{
+    width: 24px;
+    height: 24px;
+}
+.payments{
+    padding-top: 42px;
+}
+.visa{
+    width: 30.59px;
+    height: 9.9px;
+}
+.master{
+    width:30.59px;
+height: 18px;
+}
+.paytm{
+    width: 30.59px;
+    height:9.9px;
+}
+.rupay{
+    width: 30.59px;
+    height: 9px;
+}
+.cod{
+    width: 35.99px;
+    height: 12.6px;
+}
+.paypal{
+    width: 30.59px;
+    height: 9px;
+}
+.american_express{
+    width: 30.59px;
+    height: 9.9px;
+}
+.designed_by{
+    padding-top: 50px;
+    font-family: DM Sans;
+    font-size: 14px;
+    
+    font-weight: 400;
+    text-align: right;
+    color: #31313B; 
+}
+a,.xyug{
+text-decoration: none;
+color:#31313B ;
+}
+.footer_space_bottom{
+    padding-bottom: 34px;
+}
+.display_none2{
+    display: none;
+}
+@media screen and (max-width:320px){
+    .display_none1{
+        display: none;
+    }
+    .display_none2{
+        display:block;
+        margin-top: 50px;
+    }
+    .footer_nav1{
+        font-weight: 400;
+        font-family: DM Sans;
+        
+        font-size: 14px;
+        color: #555555;
+    }
+    .visa{
+        width: 36.59px;
+        height: 14.9px;
+    }
+    .master{
+        width:36.59px;
+    height: 23px;
+    }
+    .paytm{
+        width: 36.59px;
+        height:14.9px;
+    }
+    .rupay{
+        width: 36.59px;
+        height: 14px;
+    }
+    .cod{
+        width: 40.99px;
+        height: 17.6px;
+    }
+    .paypal{
+        width: 35.59px;
+        height: 14px;
+    }
+    .american_express{
+        width: 36.59px;
+        height: 14.9px;
+    }
+}
+@media screen and (max-width:425px){
+    .designed_by {
+        text-align: left !important;
+    }
+
+    .banner{
+        margin-top:63px;
+    }
+
+
+}
+
+@media (max-width: 1024px) {
+    .hide-on-small {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+   .col-md-1{
+    display: none;
+   }
+}
+@media screen and (max-width:426px){
+    .header_main{
+    display: flex !important;
+    justify-content: center !important;
+    }
+    .number{
+        display: none;
+    }
+    .navbar{
+        margin: 0px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .banner{
+        margin-top: 112px;
+    }
+}
+
+@media (max-width: 768px)  {
+    .items1{
+      display: block;
+    }
+    .nav-item{
+        padding-left: 0px;
+    }
+}

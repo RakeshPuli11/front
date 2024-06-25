@@ -1,0 +1,264 @@
+<!-- navbar -->
+
+<section>
+    <nav class="navbar fixed-top navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img class="logo" src="assets/novia/logo-03 1.png" alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active t-1" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#categories">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#About">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+  
+  <!-- carousel -->
+  
+  <section class="home-img1">
+    <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+          <div *ngFor="let corousal of data?.carousal; let i = index" [ngClass]="{'carousel-item': true, 'active': i === 0}">
+            <img
+              [src]="corousal"
+              class="corousal d-block w-100 carousal-img"
+              alt="Carousal Image"
+            />
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  
+  <!-- roundimages -->
+  
+  <section id="categories">
+    <div class="container">
+      <div class="row row-col-1 row-cols-lg-6 row-cols-md-3 g-2 g-lg-3">
+        <div class="col" *ngFor="let product of data?.products; let i = index">
+          <div class="text-center image-container">
+            <img class="mb-0" [src]="product.product" alt="Product Image">
+            <p>{{product.caption}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- promises -->
+  <section id="promises">
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <div class="d-flex flex-row flex-nowrap promises text-center">
+          <div class="prom1">
+            <img class="pic1" src="assets/novia/guaranteed.png" alt="Assured Lifetime Maintenance">
+            <p class="pp1">Assured Lifetime Maintenance</p>
+          </div>
+          <div class="prom1">
+            <img class="pic1" src="assets/novia/gold-ingots 1.png" alt="Purity 24k(999Purity)">
+            <p class="pp1">Purity 24k(999Purity)</p>
+          </div>
+          <div class="prom1">
+            <img class="pic1" src="assets/novia/asset.png" alt="Easy Exchange">
+            <p class="pp1">Easy Exchange</p>
+          </div>
+          <div class="prom1">
+            <img class="pic1" src="assets/novia/jewelry (8).png" alt="Your Jewellery is Insured">
+            <p class="pp1">Your Jewellery is Insured</p>
+          </div>
+          <div class="prom1">
+            <img class="pic1" src="assets/novia/calendar.png" alt="14 Days Return Policy">
+            <p class="pp1">14 Days Return Policy</p>
+          </div>
+          <div class="prom1">
+            <img class="pic1" src="assets/novia/transparency (2).png" alt="Complete Transparency">
+            <p class="pp1">Complete Transparency</p>
+          </div>
+          <div class="prom1">
+            <img class="pic1" src="assets/novia/safety.png" alt="Guaranteed Buypack">
+            <p class="pp1">Guaranteed Buypack</p>
+          </div>
+          <div class="prom1">
+            <img class="pic1" src="assets/novia/security (3).png" alt="Security">
+            <p class="pp1">Security</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="About">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="rectimg">
+            <img [src]="data.about[0]" alt="rectangle img" loading="lazy">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="sideimg">
+            <img class="sideimg1" [src]="data.about[1]" alt="rectangle side1" loading="lazy">
+            <img class="sideimg2" [src]="data.about[2]" alt="rectangle side2" loading="lazy">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="para">
+            <div class="phead">
+              <p>About Us</p>
+              <div class="phead2">
+                <h1>World Finest Jewellery For You</h1>
+              </div>
+              <div class="info">
+                <p>World Finest Jewellery offers an exquisite collection of meticulously crafted
+                  pieces that embody elegance and sophistication. Each item is designed with a
+                  commitment to quality and attention to detail, ensuring that every piece is a
+                  timeless addition to your collection. Whether you're looking for a dazzling
+                  diamond ring, a sophisticated necklace, or a pair of elegant earrings, our
+                  collection caters to those with the most discerning tastes</p>
+              </div>
+              <div class="info2">
+                <p>Our artisans use only the finest materials, combining traditional craftsmanship
+                  with contemporary design to create jewellery that not only enhances your beauty
+                  but also tells a story of heritage and luxury.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- contact -->
+  
+  <section class="mt-5 mb-5" id="contact">
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="contact">Contact Us</p>
+          <p class="con2"> Exquisite design, distinguished craftsmanship, unparalleled luxury and a legacy that tells a captivating tale-
+            Rose, is one of India’s leading luxury jewellery brands.</p>
+        </div>  
+      </div> 
+    </div>
+  </section>
+  
+  <!-- contacticons -->
+  
+  <section>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="call text-center">
+            <div class="calimg">
+              <img src="assets/novia/phone-call (2).png" alt="phone img">
+              <p class="ph">{{data.phonenumber}}</p>
+              <p class="para1">Support team will be available from 9:00 AM till 7:00 PM</p>
+              <p class="para2">Connect with our delight team over a quick phone call</p>  
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="mail">
+            <div class="mailimg">
+              <img src="assets/novia/envelope (1).png" alt="mail img">
+              <p class="ph">{{data.email}}</p>
+              <p class="mailpara">Your question or feedback are always welcome at bluejewellery.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="whatsapp">
+            <div class="whatsappimg">
+              <img src="assets/novia/whatsapp.png" alt="whatsapp img">
+              <p class="ph">Whatsapp Us</p>
+              <p class="wp">Our 24x7 shopping assistant is a text away</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="location">
+            <div class="locimg">
+              <img src="assets/novia/marker.png" alt="location img">
+              <p class="ph">Address</p>
+              <p class="locp">01-502, Om Shakti Samrat CHS Ltd., Plot No. 21, Shakti Nivas, , Malad West, Mumbai 400064, India.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <!-- footer -->
+  
+  <section id="footer">
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-4 mt-2">
+          <img class="logo" src="assets/novia/logo-03 1.png" alt="Logo">
+        </div>
+        <div class="col-lg-4 mt-4">
+          <div class="footerp d-flex">
+            <p>Home</p>
+            <p>About Us</p>
+            <p>Products</p>
+            <p>Contact Us</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mt-4">
+          <div class="ficons d-flex">
+            <p>Follow Us: &nbsp;</p> 
+            <div class="fimg d-flex justify-content-evenly flex-fill">
+              <img src="assets/novia/Frame.png" alt="facebook">
+              <img src="assets/novia/Frame (1).png" alt="instagram">
+              <img src="assets/novia/Frame (2).png" alt="twitter">
+              <img src="assets/novia/Frame (3).png" alt="youtube">
+              <img src="assets/novia/Group.png" alt="linkedin">
+              <img src="assets/novia/vecteezy_x-new-twitter-logo_34800663 1.png" alt="pinterest"> 
+            </div>            
+          </div>
+        </div>
+      </div>
+      <div class="row"> 
+        <div class="col-lg-6 col-12 mt-4 weimg d-flex justify-content-start">
+          <p class="payp">We Accept:
+            <img src="assets/novia/visa.svg.png" alt="visa">
+            <img src="assets/novia/master_card.svg.png" alt="master">
+            <img src="assets/novia/paytm.svg.png" alt="paytm">
+            <img src="assets/novia/rupay.svg.png" alt="rupay">
+            <img src="assets/novia/cod.svg.png" alt="cod">
+            <img src="assets/novia/paypal.svg.png" alt="paypal">
+            <img src="assets/novia/american_express.svg.png" alt="american">
+          </p>
+        </div> 
+        <div class="col-lg-6 mt-3 d-flex justify-content-end X-YUG">
+          <div class="copyright">
+            <p>2023-2024 bluejewellery.Design by: X-YUG Technologies</p>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </section>
+  

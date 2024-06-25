@@ -1,0 +1,368 @@
+<section class=" fixed-top dis_none">
+    <div class="container-fluid pt-3 pb-2 bg-body-tertiary">
+    <div class="container ">
+
+        <div class="row">
+            <div class="col-md-3 col-lg-2 col-12">
+                <div class="d-flex align-items-center header_main">
+                    <img src="assets/bluejewllery/phone.png" alt="phone" width="20px" height="20px">
+                    <span>
+                        <p class="top_header"> &nbsp;+91 {{data.phonenumber}}</p>
+                    </span>
+                </div>
+
+            </div>
+            <div class="col-md-4 col-lg-3 col-12">
+                <div class="d-flex  align-items-center header_main">
+                    <img src="assets/bluejewllery/Message_logo.png" alt="phone" width="17.92px" height="16.25px">
+                    <span>
+                        <p class="top_header">&nbsp; {{data.email}}</p>
+                    </span>
+                </div>
+            </div>
+            <div class="col-md-5 col-lg-7 col-12">
+                <div class="d-flex justify-content-end align-items-center header_main">
+                    <img src="assets/bluejewllery/Shield Done_logo.png" alt="phone" width="24px" height="24px">
+                    <span>
+                        <p class="top_header ">&nbsp; 100% Trust & Safe</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<!-- navbar  -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top pt-2">
+    <div class="container">
+        <div class="d-flex justify-content-center" id="logo">
+            <img src="assets/bluejewllery/Logo-01 1.png" alt="logo">
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="container">   
+                        <div class="row">
+                <div class="col-lg-12 d-flex justify-content-end">
+                        <ul class="navbar-nav">
+                            <li class="nav-item ">
+                                <a class="nav-link active" aria-current="page" href="" id="home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#products">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact Us</a>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div></nav>
+<!-- banner  -->
+<section>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade banner">
+      <div class="carousel-inner">
+        <div *ngFor="let corousal of data?.carousal; let i = index" [ngClass]="{'carousel-item': true, 'active': i === 0}">
+          <img
+            [src]="corousal"
+            class="d-block w-100 corousal"
+            alt="Carousal Image"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleFade"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleFade"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+<!-- assured final  -->
+<section class="assured_container">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 col-12 col-lg-12">
+                <div class="scrollable-container">
+                    <div class="assured">
+                        <a href="" class="text-decoration-none"><img src="assets/bluejewllery/guaranteed.png"
+                                alt="assured" width="36px" height="36px">
+                            <p class="assured_para">Assured Lifetime Maintenance</p>
+                        </a>
+                    </div>
+                    <div class="assured">
+                        <a href="" class="text-decoration-none"><img src="assets/bluejewllery/gold-ingots 1.png"
+                                alt="assured" width="36px" height="36px">
+                            <p class="assured_para">Purity 24k(999 Purity)</p>
+                        </a>
+                    </div>
+                    <div class="assured">
+                        <a href="" class="text-decoration-none"><img src="assets/bluejewllery/asset.png" alt="assured"
+                                width="36px" height="36px">
+                            <p class="assured_para">Easy Exchange</p>
+                        </a>
+                    </div>
+                    <div class="assured">
+                        <a href="" class="text-decoration-none"><img src="assets/bluejewllery/jewelry (8).png"
+                                alt="assured" width="36px" height="36px">
+                            <p class="assured_para">Your Jewellery is Insured</p>
+                        </a>
+                    </div>
+                    <div class="assured">
+                        <a href="" class="text-decoration-none"><img src="assets/bluejewllery/calendar.png"
+                                alt="assured" width="36px" height="36px">
+                            <p class="assured_para">14 Days Return Policy</p>
+                        </a>
+                    </div>
+                    <div class="assured">
+                        <a href="" class="text-decoration-none"><img src="assets/bluejewllery/transparency (2).png"
+                                alt="assured" width="36px" height="36px">
+                            <p class="assured_para">Complete Transparency</p>
+                        </a>
+                    </div>
+                    <div class="assured">
+                        <a href="" class="text-decoration-none"><img src="assets/bluejewllery/safety.png" alt="assured"
+                                width="36px" height="36px">
+                            <p class="assured_para">Guaranteed Buyback</p>
+                        </a>
+                    </div>
+                    <div class="assured">
+                        <a href="" class="text-decoration-none"><img src="assets/bluejewllery/security (3).png"
+                                alt="assured" width="36px" height="36px">
+                            <p class="assured_para">Security</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- about us  -->
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-maindiv" id="about">
+                <p class="about_heading">About Us</p>
+                <p class="about_para1">Exquisite design, distinguished craftsmanship, unparalleled luxury and a legacy
+                    that tells a captivating tale- Rose, is one of India’s leading luxury jewellery brands.</p>
+                <p class="about_para2">ounded in 1981, the name “Rose” was chosen from the eponymous flower. It
+                    signifies beauty, power, royalty and romance. Early on, the brand’s founders understood the value of
+                    Indian craftsmanship and made it their mission to master and preserve it. Rose’s jewellery is the
+                    perfect amalgamation of the rich design aesthetic of the East blended with the inventiveness of the
+                    West.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container ">
+        <div class="row ">
+            <div class="col-lg-6 col-md-12 col-12 img_width100">
+                <img [lazyLoad]="data.about[0]" alt="about_img_1" class="about_img_1" [offset]="10">
+            </div>
+            <div class="col-lg-6 col-md-12 col-12 about_marhin_top">
+                <p class="about_img_heding">Designing fine jewellery is an art form</p>
+                <p class="about_img_para1">It involves creating masterpieces that capture emotions, colours,
+                    individual style and grandeur. Hundreds of man hours are invested into making one-of-a-kind
+                    pieces, which are the ultimate display of admired techniques, painstaking finishing and gorgeous
+                    design.</p>
+                <p class="about_img_para1">Rose relies on nature’s rich bounty of diamonds and gemstones to bring to
+                    life fine jewellery. The creations encapsulate exceptional precious stones of vibrant colours
+                    and unique cuts, in signature combinations that have become synonymous with Rose’s artistry.
+                    Every gem is hand-selected and consciously sourced paving the way for a sustainable future.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row ">
+            <div class="col-lg-6 col-md-12 col-12">
+                <p class="about_img_heding">Legacy</p>
+                <p class="about_img_para1">It involves creating masterpieces that capture emotions, colours,
+                    individual style and grandeur. Hundreds of man hours are invested into making one-of-a-kind
+                    pieces, which are the ultimate display of admired techniques, painstaking finishing and gorgeous
+                    design.</p>
+                <p class="about_img_para1">Rose relies on nature’s rich bounty of diamonds and gemstones to bring to
+                    life fine jewellery. The creations encapsulate exceptional precious stones of vibrant colours
+                    and unique cuts, in signature combinations that have become synonymous with Rose’s artistry.
+                    Every gem is hand-selected and consciously sourced paving the way for a sustainable future.</p>
+            </div>
+            <div class="col-lg-6 col-md-12 col-12 img_width100">
+                <img [lazyLoad]="data.about[1]" alt="about_img_2" class="about_img_2" [offset]="10">
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- products  -->
+<section id="products">
+    <div class="container">
+        <div class="products_maindiv">
+            <p class="products_heding">Products</p>
+            <p class="products_paramain ">Exquisite design, distinguished craftsmanship, unparalleled luxury and a
+                legacy that tells a captivating tale- Rose, is one of India’s leading luxury jewellery brands.</p>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-2" *ngFor="let product of data?.products; let i = index">
+                <figure class="figure">
+                    <img
+                      [src]="product.product"
+                      class="figure-img img-fluid products-photos"
+                      alt="Product Image"
+                    />
+                    <figcaption class="figure-caption text-center">{{product.caption}}</figcaption>
+                  </figure>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- contact us  -->
+<section id="contact">
+    <div class="container">
+        <div class="products_maindiv">
+            <p class="products_heding">Contact Us</p>
+            <p class="products_paramain">Exquisite design, distinguished craftsmanship, unparalleled luxury and a legacy
+                that tells a captivating tale- Rose, is one of India’s leading luxury jewellery brands.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card contact_maindiv border-0">
+                    <img src="assets/bluejewllery/phone contactus.png" alt="phonecontactus" class="contact_image">
+                    <p class="cno_img_name">+91 7645486421</p>
+                    <p class="support_team">Support team will be available from
+                        9:00 AM till 7:00 PM</p>
+                    <p class="quick_call_contact2">Connect with our delight team over
+                        a quick phone call</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card contact_maindiv border-0">
+                    <img src="assets/bluejewllery/mail.png" alt="phonecontactus" class="contact_image">
+                    <p class="cno_img_name">bluejewellery@gmail.com</p>
+                    <p class="quick_call">Your question or feedback are always
+                        welcome at bluejewellery.com</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card contact_maindiv border-0">
+                    <img src="assets/bluejewllery/whatsapp.png" alt="phonecontactus" class="contact_image">
+                    <p class="cno_img_name">Whatsapp Us</p>
+                    <p class="quick_call">Our 24x7 shopping assistant is a text
+                        away</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card contact_maindiv border-0">
+                    <img src="assets/bluejewllery/location.png" alt="phonecontactus" class="contact_image">
+                    <p class="cno_img_name">Address</p>
+                    <p class="quick_call">01-502, Om Shakti Samrat CHS Ltd., Plot No. 21, Shakti Nivas, , Malad West,
+                        Mumbai 400064, India.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- footer  -->
+<section>
+    <footer>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 col-12">
+                        <div class="footer_logo">
+                            <img src="assets/bluejewllery/Logo-01 1.png" alt="logo" id="logo">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-5 col-12">
+                        <div class="d-flex justify-content-evenly">
+                            <p class="footer_nav">Home</p>
+                            <p class="footer_nav">About Us</p>
+                            <p class="footer_nav">Products</p>
+                            <p class="footer_nav">Contact Us</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-12">
+                        <div class="d-flex justify-content-center">
+                            <p class="footer_nav">Follow Us:&nbsp;</p>
+                            <div class="d-flex justify-content-evenly flex-fill follow_us_maindiv">
+                                <div><img src="assets/bluejewllery/facebook.png" alt="facebbok" class="footer_followus"></div>
+                                <div><img src="assets/bluejewllery/insta.png" alt="insta" class="footer_followus"></div>
+                                <div><img src="assets/bluejewllery/vecteezy_x-new-twitter-logo_34800663 1.png" alt="twitter" class="footer_followus"></div>
+                                <div><img src="assets/bluejewllery/youtub.png" alt="youtube" class="footer_followus"></div>
+                                <div><img src="assets/bluejewllery/linkdin.png" alt="linkedin" class="footer_followus"></div>
+                                <div><img src="assets/bluejewllery/pet.png" alt="pet" class="footer_followus"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- display only at 320px  -->
+            <div class="container display_none2">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row d-flex flex-row">
+                            <div class="col-md-6 col-12">
+                                <div class="d-flex flex-row justify-content-evenly align-items-center">
+                                    <div><h6 class="footer_nav1">we accept:</h6></div>
+                                    <div><img src="assets/bluejewllery/visa.svg.png" alt="visa" class="visa"></div>
+                                    <div><img src="assets/bluejewllery/master_card.svg.png" alt="visa" class="master"></div>
+                                    <div><img src="assets/bluejewllery/paytm.svg.png" alt="visa" class="paytm"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12 d-flex justify-content-evenly mt-4">
+                                <div><img src="assets/bluejewllery/rupay.svg.png" alt="visa" class="rupay"></div>
+                                <div><img src="assets/bluejewllery/cod.svg.png" alt="visa" class="cod"></div>
+                                <div><img src="assets/bluejewllery/paypal.svg.png" alt="visa" class="paypal"></div>
+                                <div><img src="assets/bluejewllery/american_express.svg.png" alt="visa" class="american_express"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row footer_space_bottom">
+                    <div class="col-md-6 col-12 display_none1">
+                        <div class="d-flex">
+                            <p class="footer_nav">We Accept:&nbsp;</p>
+                            <div class="payments d-flex flex-fill justify-content-between align-items-center">
+                                <img src="assets/bluejewllery/visa.svg.png" alt="visa" class="visa">
+                                <img src="assets/bluejewllery/master_card.svg.png" alt="visa" class="master">
+                                <img src="assets/bluejewllery/paytm.svg.png" alt="visa" class="paytm">
+                                <img src="assets/bluejewllery/rupay.svg.png" alt="visa" class="rupay">
+                                <img src="assets/bluejewllery/cod.svg.png" alt="visa" class="cod">
+                                <img src="assets/bluejewllery/paypal.svg.png" alt="visa" class="paypal">
+                                <img src="assets/bluejewllery/american_express.svg.png" alt="visa" class="american_express">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 display_start">
+                        <p class="designed_by">2023-2024 bluejewellery.Design by: <span><a href="https://xyug.in/" class="xyug"> X-YUG Technologies</a></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</section>
